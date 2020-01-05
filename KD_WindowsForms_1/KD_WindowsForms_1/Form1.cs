@@ -16,5 +16,17 @@ namespace KD_WindowsForms_1
         {
             InitializeComponent();
         }
+
+        private void btnVardas_Click(object sender, EventArgs e)
+        {
+            if(tbVardas.Text == "")
+            {
+                MessageBox.Show("Vardas negali buti tuscias");
+                return;
+            }
+
+            tbOutput.Text = $"Sveikas {tbVardas.Text}";
+            tbOutput.AppendText("\r\nMalonu tave matyti");
+        }
     }
 }
