@@ -28,13 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.tbOtput = new System.Windows.Forms.TextBox();
+            this.btnParodytiDuomenis = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // tbOtput
+            // 
+            this.tbOtput.Location = new System.Drawing.Point(30, 35);
+            this.tbOtput.Name = "tbOtput";
+            this.tbOtput.Size = new System.Drawing.Size(373, 26);
+            this.tbOtput.TabIndex = 0;
+            // 
+            // btnParodytiDuomenis
+            // 
+            this.btnParodytiDuomenis.Location = new System.Drawing.Point(30, 101);
+            this.btnParodytiDuomenis.Name = "btnParodytiDuomenis";
+            this.btnParodytiDuomenis.Size = new System.Drawing.Size(373, 86);
+            this.btnParodytiDuomenis.TabIndex = 1;
+            this.btnParodytiDuomenis.Text = "Parodyti duomenis";
+            this.btnParodytiDuomenis.UseVisualStyleBackColor = true;
+            this.btnParodytiDuomenis.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(437, 234);
+            this.Controls.Add(this.btnParodytiDuomenis);
+            this.Controls.Add(this.tbOtput);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox tbOtput;
+        private System.Windows.Forms.Button btnParodytiDuomenis;
     }
 }
 

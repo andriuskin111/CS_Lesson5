@@ -16,5 +16,11 @@ namespace ND_WindowsForms_1
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DateTime data = DateTime.Now;
+            tbOtput.Text = $"Vardas: Andrius     Data: {data.ToShortDateString()}";
+        }
     }
 }
