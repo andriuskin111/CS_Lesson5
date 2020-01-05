@@ -16,5 +16,32 @@ namespace ND_WindowsForms_3
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (tbInput.Text == "")
+            {
+                MessageBox.Show("Langeliai turi buti uzpildyti");
+                return;
+            }
+
+            try
+            {
+                int skaicius = (int.Parse(tbInput.Text));
+                if(skaicius % 2 != 0)
+                {
+                    lblSkaicius.Text = "Skaicius nelyginis";
+                }
+                else
+                {
+                    lblSkaicius.Text = "Skaicius Lyginis";
+                }
+            }
+            catch
+
+            {
+                MessageBox.Show("Ivesti neteisingi duomenys");
+            }
+        }
     }
 }
