@@ -16,5 +16,13 @@ namespace ND_WindowsForms_2
         {
             InitializeComponent();
         }
+
+        private void btnParodyti_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                tbOutput.AppendText("Andrius\r\n");
+            }
+        }
     }
 }
