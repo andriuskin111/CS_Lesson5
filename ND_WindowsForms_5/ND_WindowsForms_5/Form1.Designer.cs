@@ -78,7 +78,7 @@
             this.Controls.Add(this.btnKonvertuoti);
             this.Controls.Add(this.tbInput);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Temperaturos konverteris";
             this.ResumeLayout(false);
             this.PerformLayout();
 
